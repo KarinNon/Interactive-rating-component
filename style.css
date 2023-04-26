@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+    --bg-color: hsl(216, 12%, 8%);
+    --container-bg: hsl(213, 19%, 18%);
+    --score-bg: hsla(216, 12%, 54%, 0.1);
+    --click-score-bg: hsl(216, 12%, 54%);
+    --text-color: hsl(217, 12%, 63%);
+    --main-orange: hsl(25, 97%, 53%);
+    --font: "Overpass", sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: var(--font);
+    margin: 0;
+}
+
+.container {
+    width: 340px;
+    height: 340px;
+    background-color: var(--container-bg);
+    margin: auto;
+    margin-top: 200px;
+    border-radius: 30px;
+    padding: 30px;
+}
+
+#page1 {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.icon-box {
+    background-color: var(--score-bg);
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    text-align: center;
+}
+
+.icon-box svg {
+    margin-top: 17px;
+}
+
+#page1 h1 {
+    color: white;
+    font-size: 1.75em;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+#page1 p {
+    color: var(--text-color);
+    line-height: 25px;
+    font-size: 0.9em;
+}
+
+#page1 ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+#page1 ul li {
+    background-color: var(--score-bg);
+    margin-right: 25px;
+    width: 50px;
+    height: 35px;
+    text-align: center;
+    padding-top: 15px;
+    border-radius: 100px;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+#page1 ul li:hover {
+    background-color: var(--main-orange) !important;
+    color: white;
+}
+
+#page1 button {
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 100px;
+    background-color: var(--main-orange);
+    font-family: var(--font);
+    font-size: 0.9em;
+    color: white;
+    cursor: pointer;
+}
+
+#page1 button:hover {
+    background-color: white;
+    color: var(--main-orange);
+}
+
+#page2 {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: none;
+}
+
+#page2 svg {
+    margin-top: 20px;
+}
+
+#page2 .score-text-box {
+    width: 55%;
+    margin: auto;
+    background-color: var(--score-bg);
+    color: var(--main-orange);
+    padding-block: 7.5px;
+    margin-top: 20px;
+    border-radius: 100px;
+}
+
+#page2 .score-text-box p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+#page2 #output {
+    color: var(--main-orange);
+}
+
+#page2 h1 {
+    color: white;
+    font-size: 1.75em;
+    margin: 0;
+    margin-top: 30px;
+}
+
+#page2 p {
+    color: var(--text-color);
+    font-size: 0.95em;
+    line-height: 22.5px;
+}
+
+@media screen and (max-width: 330px) {
+    .container {
+        width: 250px;
+        height: 250px;
+    }
+} 
